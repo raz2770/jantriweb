@@ -1,38 +1,99 @@
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li:hover {
+  color: #ffeb3b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .navbar-links {
+    display: none; /* Initially hide links for mobile view */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #007bff; /* Ensure links remain in the navbar color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links li {
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+  }
+
+  .navbar-links li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-links.show {
+    display: flex; /* Show the links when the menu is toggled */
+  }
+
+  .navbar-logo {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .navbar-links {
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Show hamburger button on mobile */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
   }
-  
-  .navbar-links li {
-    cursor: pointer;
-    font-size: 1rem;
-    color: #fff;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-links li:hover {
-    color: #ffeb3b;
-  }
-  
+}

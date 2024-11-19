@@ -1,59 +1,119 @@
 .plans-section {
-    text-align: center;
-    padding: 50px;
-    background: #f8f9fa;
+  text-align: center;
+  padding: 50px 20px; /* Adjusted padding for smaller screens */
+  background: #f8f9fa;
+}
+
+.plans-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.plan-cards {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  justify-content: center;
+  gap: 30px;
+}
+
+.plan-card {
+  background: #fff;
+  padding: 30px;
+  width: 250px; /* Default width */
+  max-width: 100%; /* Ensure the card fits smaller screens */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+}
+
+.plan-card h3 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.plan-card p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .plans-section {
+    padding: 40px 15px; /* Reduced padding for tablets */
   }
-  
-  .plans-section h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 40px;
-  }
-  
+
   .plan-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap: 20px; /* Reduce gap between cards */
   }
-  
+
   .plan-card {
-    background: #fff;
-    padding: 30px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+    width: 100%; /* Cards take full width */
+    max-width: 90%; /* Add a margin for aesthetics */
+    padding: 20px; /* Adjust padding for smaller cards */
   }
-  
-  .plan-card:hover {
-    transform: translateY(-10px);
-  }
-  
+
   .plan-card h3 {
-    font-size: 1.8rem;
-    color: #007bff;
-    margin-bottom: 10px;
+    font-size: 1.6rem; /* Slightly smaller heading */
   }
-  
+
   .plan-card p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1rem; /* Adjust description font size */
   }
-  
+
   .subscribe-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    padding: 8px 16px;
+    font-size: 0.9rem; /* Smaller button text */
   }
-  
-  .subscribe-button:hover {
-    background: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .plans-section h2 {
+    font-size: 2rem; /* Adjust heading size */
+    margin-bottom: 30px;
   }
-  
+
+  .plan-cards {
+    gap: 15px; /* Compact spacing for mobile */
+  }
+
+  .plan-card {
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtler shadow */
+  }
+
+  .plan-card h3 {
+    font-size: 1.4rem; /* Smaller heading for mobile */
+  }
+
+  .plan-card p {
+    font-size: 0.9rem; /* Compact description text */
+  }
+
+  .subscribe-button {
+    padding: 6px 14px; /* Compact button size */
+    font-size: 0.85rem;
+  }
+}

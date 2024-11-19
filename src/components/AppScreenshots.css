@@ -1,48 +1,92 @@
 .screenshots-container {
-    padding: 50px;
-    text-align: center;
-    background-color: #f9fafb;
+  padding: 50px 20px; /* Adjust padding for smaller screens */
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+.screenshots-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.screenshots-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.screenshots-carousel {
+  width: 80%;
+  max-width: 1000px; /* Ensure carousel doesn't stretch too wide */
+  margin: 0 auto;
+}
+
+.screenshot-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.screenshot-slide img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.screenshot-slide.swiper-slide-active img {
+  transform: scale(1.2); /* Scale the middle image */
+}
+
+.screenshot-slide.swiper-slide-next img,
+.screenshot-slide.swiper-slide-prev img {
+  transform: scale(0.9); /* Slightly reduce size for side images */
+  opacity: 0.8; /* Make side images less prominent */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .screenshots-container {
+    padding: 40px 15px; /* Reduced padding for tablets */
   }
-  
+
   .screenshots-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 2rem; /* Adjust heading size */
+    margin-bottom: 15px;
   }
-  
+
   .screenshots-container p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
+    font-size: 1rem; /* Smaller text for smaller screens */
+    margin-bottom: 30px;
   }
-  
+
   .screenshots-carousel {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%; /* Wider carousel for smaller screens */
   }
-  
-  .screenshot-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
+
   .screenshot-slide img {
-    max-width: 100%;
-    max-height: 400px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    max-height: 300px; /* Reduce image height */
   }
-  
-  .screenshot-slide.swiper-slide-active img {
-    transform: scale(1.2); /* Scale the middle image */
+}
+
+@media (max-width: 480px) {
+  .screenshots-container h2 {
+    font-size: 1.8rem; /* Smaller heading size for mobile */
   }
-  
-  .screenshot-slide.swiper-slide-next img,
-  .screenshot-slide.swiper-slide-prev img {
-    transform: scale(0.9); /* Slightly reduce size for side images */
-    opacity: 0.8; /* Make side images less prominent */
+
+  .screenshots-container p {
+    font-size: 0.9rem; /* Compact text */
+    margin-bottom: 20px;
   }
-  
+
+  .screenshots-carousel {
+    width: 95%; /* Full width on mobile */
+  }
+
+  .screenshot-slide img {
+    max-height: 200px; /* Further reduce image height */
+  }
+}
