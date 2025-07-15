@@ -6,22 +6,55 @@ import feature3 from "../assets/feature-icon3.png";
 
 const FeaturesSection = () => {
   const features = [
-    { icon: feature1, title: "Manage Clients", description: "Effortlessly manage your client data with an intuitive interface." },
-    { icon: feature2, title: "Secure Data", description: "Your data is encrypted and stored securely for peace of mind." },
-    { icon: feature3, title: "Real-Time Sync", description: "Sync your data across devices in real-time without hassle." },
+    { 
+      icon: feature1, 
+      title: "Live Satta King Results", 
+      description: "Sabse fast Sattaking aur Matka results with instant notification. Kalyan, Mumbai, aur sabhi major markets ka live update.",
+      link: "#"
+    },
+    { 
+      icon: feature2, 
+      title: "Jantri Chart & Trick Analysis", 
+      description: "Complete Jantri charts, historical data, aur advanced pattern analysis tools. सही jodi nikalne ke liye best tricks.",
+      link: "#"
+    },
+    { 
+      icon: feature3, 
+      title: "MS Sheet Calculator Pro", 
+      description: "Professional MS Sheet calculations with automated formulas, profit/loss tracking, aur detailed reports. पैसा double karne ka आसान tarika.",
+      link: "#"
+    },
   ];
 
   return (
     <section className="features-section" id="features">
-      <h2>App Features</h2>
-      <div className="features">
-        {features.map((feature, index) => (
-          <div className="feature-card" key={index}>
-            <img src={feature.icon} alt={feature.title} className="feature-icon" />
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
-          </div>
-        ))}
+      <div className="features-container">
+        <div className="features-header">
+          <div className="features-badge">Top Features</div>
+          <h2 className="features-title">Complete Satta King & Matka Solution</h2>
+          <p className="features-description">
+            Sattaking analysis, Matka calculations, aur comprehensive Jantri management 
+            ke liye सब कुछ ek hi powerful app mein. पैसा kamane ka सही tarika!
+          </p>
+        </div>
+        
+        <div className="features-grid">
+          {features.map((feature, index) => (
+            <div className="feature-card" key={index}>
+              <div className="feature-icon-wrapper">
+                <img src={feature.icon} alt={feature.title} className="feature-icon" />
+              </div>
+              <h3 className="feature-title">{feature.title}</h3>
+              <p className="feature-description">{feature.description}</p>
+              <a href={feature.link} className="feature-link">
+                Learn More
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

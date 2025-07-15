@@ -1,22 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './YouTubeVideo.css';
 
 const YouTubeVideo = ({ videoUrl }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  
   // Extract the video ID from the YouTube URL
-  const videoId = videoUrl.split('v=')[1].split('&')[0];
+  const videoId = videoUrl.split('v=')[1]?.split('&')[0] || '';
+
+  const handleLoadVideo = () => {
+    setIsLoaded(true);
+  };
 
   return (
-    <div className="youtube-video-container">
-      <iframe
-        width="100%"
-        height="400"
-        src={`https://www.youtube.com/embed/${videoId}`}
-        title="YouTube video"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
+    <section className="youtube-section" id="video">
+      <div className="youtube-container">
+        <div className="youtube-header">
+          <div className="youtube-badge">
+            Watch Demo
+          </div>
+          <h2 className="youtube-title">
+            See Our App in Action
+          </h2>
+          <p className="youtube-description">
+            Watch this comprehensive demo to see how our app can transform 
+            your client management workflow and boost your productivity.
+          </p>
+        </div>
+
+        <div className="youtube-video-wrapper">
+          <div className="youtube-video-container">
+            {!isLoaded ? (
+              <div className="youtube-play-overlay" onClick={handleLoadVideo}>
+                <div className="youtube-play-icon"></div>
+              </div>
+            ) : null}
+            
+            <iframe
+              width="100%"
+              height="100%"
+              src={`https://www.youtube.com/embed/${videoId}${isLoaded ? '?autoplay=1' : ''}`}
+              title="Product Demo Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <div className="youtube-features">
+          <div className="youtube-feature">Complete walkthrough</div>
+          <div className="youtube-feature">Real-time demonstrations</div>
+          <div className="youtube-feature">Expert tips & tricks</div>
+          <div className="youtube-feature">Best practices</div>
+        </div>
+      </div>
+    </section>
   );
 };
 

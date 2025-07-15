@@ -1,3 +1,28 @@
+# Jantri MS Sheet - Sattaking Matka App
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemaps
+Sitemap: https://jantri-web.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific directives for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Allow important pages for Sattaking/Matka keywords
+Allow: /sattaking
+Allow: /matka
+Allow: /jantri
+Allow: /kalyan
+Allow: /ms-sheet

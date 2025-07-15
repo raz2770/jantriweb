@@ -1,38 +1,95 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setMenuOpen(false); // Close menu after clicking a link
+    setMenuOpen(false);
   };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuOpen && !event.target.closest('.navbar')) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [menuOpen]);
+
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        MS Sheet
-        <div className="hamburger" onClick={toggleMenu}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
+      <div className="navbar-container">
+        <div className="navbar-logo" onClick={() => scrollToSection("hero")} role="button" tabIndex="0">
+          Jantri MS Sheet
+        </div>
+        
+        <ul className="navbar-links" role="menubar">
+          <li onClick={() => scrollToSection("hero")} role="menuitem">Home</li>
+          <li onClick={() => scrollToSection("features")} role="menuitem">Features</li>
+          <li onClick={() => scrollToSection("screenshots")} role="menuitem">Screenshots</li>
+          <li onClick={() => scrollToSection("download")} role="menuitem">Download</li>
+          <li onClick={() => scrollToSection("plans")} role="menuitem">Plans</li>
+          <li onClick={() => scrollToSection("contact")} role="menuitem">Contact</li>
+          <button 
+            className="navbar-cta" 
+            onClick={() => scrollToSection("download")}
+            aria-label="Download Jantri MS Sheet App"
+          >
+            Get Started
+          </button>
+        </ul>
+
+        <button 
+          className={`hamburger ${menuOpen ? 'active' : ''}`} 
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
           <div></div>
           <div></div>
           <div></div>
+        </button>
+
+        <div className={`mobile-menu ${menuOpen ? 'show' : ''}`}>
+          <ul>
+            <li onClick={() => scrollToSection("hero")}>Home</li>
+            <li onClick={() => scrollToSection("features")}>Features</li>
+            <li onClick={() => scrollToSection("screenshots")}>Screenshots</li>
+            <li onClick={() => scrollToSection("download")}>Download</li>
+            <li onClick={() => scrollToSection("plans")}>Plans</li>
+            <li onClick={() => scrollToSection("contact")}>Contact</li>
+          </ul>
+          <button 
+            className="navbar-cta" 
+            onClick={() => scrollToSection("download")}
+          >
+            Get Started
+          </button>
         </div>
       </div>
-      <ul className={`navbar-links ${menuOpen ? "show" : ""}`}>
-        <li onClick={() => scrollToSection("hero")}>Home</li>
-        <li onClick={() => scrollToSection("features")}>Features</li>
-        <li onClick={() => scrollToSection("download")}>Download</li>
-        <li onClick={() => scrollToSection("plans")}>Plans</li>
-        <li onClick={() => scrollToSection("contact")}>Contact</li>
-      </ul>
     </nav>
   );
 };

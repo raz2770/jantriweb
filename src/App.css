@@ -1,12 +1,133 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
+/* Main App Styles */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-section {
-  margin-bottom: 50px;
+.main-content {
+  flex: 1;
 }
-html {
-  scroll-behavior: smooth;
+
+/* Section spacing */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+section:not(:last-child) {
+  margin-bottom: 0;
+}
+
+/* Background Patterns */
+.bg-pattern-dots {
+  background-image: radial-gradient(circle, var(--gray-200) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-pattern-grid {
+  background-image: 
+    linear-gradient(var(--gray-100) 1px, transparent 1px),
+    linear-gradient(90deg, var(--gray-100) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 50%, var(--gray-50) 100%);
+}
+
+/* Scroll Animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading States */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--gray-200) 25%, var(--gray-100) 50%, var(--gray-200) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Focus States */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-400);
+  border-radius: var(--radius-lg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500);
+}
+
+/* Print Styles */
+@media print {
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
 }

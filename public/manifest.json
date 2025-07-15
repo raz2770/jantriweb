@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jantri MS Sheet",
+  "name": "Jantri MS Sheet - Sattaking Matka Results & Charts",
+  "description": "Professional Jantri MS Sheet app for Sattaking and Matka results. Get live charts, historical data, kalyan results, and comprehensive matka analysis tools.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,9 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#6366f1",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "categories": ["utilities", "productivity", "business"],
+  "lang": "en"
 }
