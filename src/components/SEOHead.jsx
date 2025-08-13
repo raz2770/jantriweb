@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const SEOHead = ({ 
-  title = "Jantri MS Sheet - Sattaking Matka Results & Charts App",
-  description = "Professional Jantri MS Sheet app for Sattaking and Matka results. Get live charts, historical data, kalyan results, and comprehensive matka analysis tools.",
-  keywords = "jantri, ms sheet, sattaking, matka, kalyan matka, dpboss, satta king, matka results, jantri chart, satta matka, gambling app, lottery results, matka tips",
+  title = "Jantri TZ Sheet - Client Account & Hisab Management App",
+  description = "Professional client account management aur Jantri calculations. Complete financial record tracking, profit-loss analysis, aur accurate hisab-kitab for your business.",
+  keywords = "jantri, tz sheet, client management, account management, hisab kitab, financial tracking, profit loss, business management, client accounts, jantri calculations",
   canonicalUrl = "https://jantri-web.vercel.app/",
   ogImage = "/logo512.png"
 }) => {
@@ -44,7 +44,7 @@ const SEOHead = ({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "MobileApplication",
-          "name": "Jantri MS Sheet",
+          "name": "Jantri TZ Sheet",
           "description": description,
           "url": canonicalUrl,
           "applicationCategory": "UtilityApplication",
@@ -61,7 +61,7 @@ const SEOHead = ({
           },
           "author": {
             "@type": "Organization",
-            "name": "Jantri MS Sheet",
+            "name": "Jantri TZ Sheet",
             "url": canonicalUrl
           }
         })}

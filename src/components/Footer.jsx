@@ -22,11 +22,11 @@ const Footer = () => {
           <div className="footer-brand scroll-reveal-left">
             <div className="footer-logo">
               <span className="logo-icon">📱</span>
-              MS Sheet
+              TZ Sheet
             </div>
             <p className="footer-description">
-              Streamline your workflow and manage clients seamlessly with our powerful, 
-              intuitive app designed for modern businesses.
+              Professional client account management aur Jantri calculations. 
+              Complete hisab-kitab aur financial tracking solution for your business.
             </p>
             <div className="footer-social">
               <a href="/" className="social-link hover-lift" aria-label="Facebook">
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="footer-section scroll-reveal">
             <h3>Product</h3>
             <ul className="footer-links">
-              <li><a href="#features">Features</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
               <li><a href="#download">Download</a></li>
               <li><a href="#plans">Pricing</a></li>
               <li><a href="#screenshots">Screenshots</a></li>
@@ -106,7 +106,7 @@ const Footer = () => {
         
         <div className="footer-bottom scroll-reveal">
           <p className="footer-copyright">
-            &copy; {currentYear} MS Sheet. All rights reserved.
+            &copy; {currentYear} TZ Sheet. All rights reserved.
           </p>
           <div className="footer-legal">
             <a href="#privacy">Privacy Policy</a>

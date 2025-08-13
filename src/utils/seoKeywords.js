@@ -1,4 +1,4 @@
-// SEO Keywords for Jantri MS Sheet - Based on SattaSport.in (Authentic Industry Keywords)
+// SEO Keywords for Jantri TZ Sheet - Based on SattaSport.in (Authentic Industry Keywords)
 
 export const primaryKeywords = [
   'satta king',
@@ -10,7 +10,7 @@ export const primaryKeywords = [
   'gali satta chart',
   'faridabad result',
   'ghaziabad result',
-  'jantri ms sheet'
+  'jantri tz sheet'
 ];
 
 export const secondaryKeywords = [

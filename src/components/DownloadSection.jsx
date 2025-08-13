@@ -19,23 +19,23 @@ const DownloadSection = () => {
     <section className="download-section" id="download" itemScope itemType="https://schema.org/SoftwareApplication">
       <div className="download-container">
         <div className="download-badge">
-          Download Free App
+          मुफ्त ऐप डाउनलोड करें
         </div>
         
         <h2 className="download-title" itemProp="name">
-          Jantri MS Sheet App Download Kariye - Free!
+          Jantri TZ Sheet App डाउनलोड करें - मुफ्त!
         </h2>
         
         <p className="download-description" itemProp="description">
-          Professional Jantri MS Sheet app download kariye aur accurate Sattaking results paiye. 
-          Live charts, historical data, aur complete analysis tools apke mobile mein!
+          Professional client management app डाउनलोड करें. Complete hisab-kitab, 
+          Jantri calculations, aur accurate financial tracking आपके mobile में!
         </p>
         
         <div className="download-buttons">
           <button 
             className="download-button" 
             onClick={() => handleDownload('google-play')}
-            aria-label="Download Jantri MS Sheet from Google Play Store"
+            aria-label="Download Jantri TZ Sheet from Google Play Store"
           >
             <img src={googlePlay} alt="Download from Google Play Store" />
             <span>Google Play</span>
@@ -43,7 +43,7 @@ const DownloadSection = () => {
           <button 
             className="download-button" 
             onClick={() => handleDownload('app-store')}
-            aria-label="Download Jantri MS Sheet from Apple App Store"
+            aria-label="Download Jantri TZ Sheet from Apple App Store"
           >
             <img src={appStore} alt="Download from Apple App Store" />
             <span>App Store</span>

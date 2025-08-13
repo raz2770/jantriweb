@@ -16,14 +16,14 @@ const YouTubeVideo = ({ videoUrl }) => {
       <div className="youtube-container">
         <div className="youtube-header">
           <div className="youtube-badge">
-            Watch Demo
+            डेमो देखें
           </div>
           <h2 className="youtube-title">
-            See Our App in Action
+            ऐप डेमो - Client Management
           </h2>
           <p className="youtube-description">
-            Watch this comprehensive demo to see how our app can transform 
-            your client management workflow and boost your productivity.
+            देखें कैसे manage करें clients, calculate करें Jantri, aur maintain 
+            करें accurate hisab-kitab हमारे professional app के साथ.
           </p>
         </div>
 

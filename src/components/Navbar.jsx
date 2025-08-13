@@ -44,22 +44,21 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => scrollToSection("hero")} role="button" tabIndex="0">
-          Jantri MS Sheet
+          Jantri TZ Sheet
         </div>
         
         <ul className="navbar-links" role="menubar">
           <li onClick={() => scrollToSection("hero")} role="menuitem">Home</li>
-          <li onClick={() => scrollToSection("features")} role="menuitem">Features</li>
           <li onClick={() => scrollToSection("screenshots")} role="menuitem">Screenshots</li>
           <li onClick={() => scrollToSection("download")} role="menuitem">Download</li>
-          <li onClick={() => scrollToSection("plans")} role="menuitem">Plans</li>
-          <li onClick={() => scrollToSection("contact")} role="menuitem">Contact</li>
+          <li onClick={() => scrollToSection("plans")} role="menuitem">प्लान्स</li>
+          <li onClick={() => scrollToSection("contact")} role="menuitem">संपर्क</li>
           <button 
             className="navbar-cta" 
             onClick={() => scrollToSection("download")}
-            aria-label="Download Jantri MS Sheet App"
+            aria-label="Download Jantri TZ Sheet App"
           >
-            Get Started
+            शुरू करें
           </button>
         </ul>
 
@@ -76,17 +75,16 @@ const Navbar = () => {
         <div className={`mobile-menu ${menuOpen ? 'show' : ''}`}>
           <ul>
             <li onClick={() => scrollToSection("hero")}>Home</li>
-            <li onClick={() => scrollToSection("features")}>Features</li>
             <li onClick={() => scrollToSection("screenshots")}>Screenshots</li>
             <li onClick={() => scrollToSection("download")}>Download</li>
-            <li onClick={() => scrollToSection("plans")}>Plans</li>
-            <li onClick={() => scrollToSection("contact")}>Contact</li>
+            <li onClick={() => scrollToSection("plans")}>प्लान्स</li>
+            <li onClick={() => scrollToSection("contact")}>संपर्क</li>
           </ul>
           <button 
             className="navbar-cta" 
             onClick={() => scrollToSection("download")}
           >
-            Get Started
+            शुरू करें
           </button>
         </div>
       </div>

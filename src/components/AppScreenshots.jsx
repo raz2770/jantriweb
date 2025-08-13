@@ -7,13 +7,22 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./AppScreenshots.css";
 
+// Import screenshot images
+import ss1 from "../assets/ss1.jpg";
+import ss2 from "../assets/ss2.jpg";
+import ss3 from "../assets/ss3.jpg";
+import ss4 from "../assets/ss4.jpg";
+import ss5 from "../assets/ss5.jpg";
+import ss6 from "../assets/ss6.jpg";
+
 const AppScreenshots = () => {
   const screenshots = [
-    "screenshot1.png",
-    "screenshot2.png", 
-    "screenshot3.png",
-    "screenshot4.png",
-    "screenshot5.png",
+    ss1,
+    ss2, 
+    ss3,
+    ss4,
+    ss5,
+    ss6,
   ];
 
   return (
@@ -21,14 +30,14 @@ const AppScreenshots = () => {
       <div className="screenshots-container">
         <div className="screenshots-header">
           <div className="screenshots-badge">
-            Screenshots
+            स्क्रीनशॉट्स
           </div>
           <h2 className="screenshots-title">
-            Experience the Interface
+            ऐप Interface का Preview
           </h2>
           <p className="screenshots-description">
-            Explore our intuitive design and powerful features through 
-            these interactive screenshots of the app.
+            देखिये कैसे आसानी से manage करें clients, calculate करें Jantri, 
+            aur maintain करें accurate financial records.
           </p>
         </div>
         

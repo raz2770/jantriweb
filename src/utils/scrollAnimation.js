@@ -54,7 +54,7 @@ export const addScrollRevealClasses = () => {
   });
 
   // Add to sections
-  const sections = document.querySelectorAll('.features-section, .download-section, .plans-section, .contact-section, .youtube-section, .screenshots-section');
+  const sections = document.querySelectorAll('.download-section, .plans-section, .contact-section, .youtube-section, .screenshots-section');
   sections.forEach(section => {
     section.classList.add('scroll-reveal');
   });

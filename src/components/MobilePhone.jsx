@@ -25,12 +25,12 @@ const MobilePhone = () => {
       <div className="phone-glow"></div>
       <img
         src={phoneMockup1}
-        alt="Jantri MS Sheet App - Sattaking Matka Results Calculator Mobile Interface"
+        alt="Jantri TZ Sheet App - Sattaking Matka Results Calculator Mobile Interface"
         className="phone-mockup"
         loading="eager"
         onError={handleImageError}
         onLoad={handleImageLoad}
-        title="Professional Jantri MS Sheet for Sattaking and Matka Analysis"
+        title="Professional Jantri TZ Sheet for Sattaking and Matka Analysis"
       />
       <div className="phone-highlights">
         <div className="highlight highlight-1"></div>

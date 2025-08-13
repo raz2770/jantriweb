@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import FeaturesSection from "./components/FeaturesSection";
 import DownloadSection from "./components/DownloadSection";
 import PlansSection from "./components/PlansSection";
 import Footer from "./components/Footer";
@@ -10,6 +9,7 @@ import YouTubeVideo from "./components/YouTubeVideo";
 import AppScreenshots from "./components/AppScreenshots";
 import Contact from "./components/Contact";
 import SEOHead from "./components/SEOHead";
+import WhatsAppButton from "./components/WhatsAppButton";
 import { initAllAnimations } from "./utils/scrollAnimation";
 
 const App = () => {
@@ -28,7 +28,6 @@ const App = () => {
       <Navbar />
       <main className="main-content" role="main">
         <HeroSection />
-        <FeaturesSection />
         <AppScreenshots />
         <DownloadSection />
         <YouTubeVideo videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
@@ -36,6 +35,7 @@ const App = () => {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

@@ -8,14 +8,14 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-header">
           <div className="contact-badge">
-            24/7 मदद Available
+            24/7 सहायता उपलब्ध
           </div>
           <h2 className="contact-title">
-            Sattaking & Matka Ki Koi Bhi Problem? हम हैं Na!
+            Client Management में मदद चाहिए?
           </h2>
           <p className="contact-description">
-            Jantri calculations, MS Sheet formulas, ya live results mein कोई dikkat? 
-            Hamare expert team se 24/7 बात kariye. Satta King banane mein help करेंगे!
+            Jantri calculations, TZ Sheet formulas, या किसी भी problem में कोई दिक्कत? 
+            हमारे expert team से 24/7 बात करिये. Business management में मदद करेंगे!
           </p>
         </div>
 
@@ -24,8 +24,8 @@ const Contact = () => {
             <div className="contact-icon-wrapper">
               <FaPhoneAlt className="contact-icon" />
             </div>
-            <h3>Call Support</h3>
-            <p>Jantri calculations, Matka results, aur technical help ke liye direct call kariye.</p>
+            <h3>फ़ोन सपोर्ट</h3>
+            <p>Client management, Jantri calculations, aur technical help के लिए direct call करिये.</p>
             <a href="tel:+919057279546" className="contact-link">
               +91 90572 79546
             </a>
@@ -35,15 +35,15 @@ const Contact = () => {
             <div className="contact-icon-wrapper">
               <FaWhatsapp className="contact-icon" />
             </div>
-            <h3>WhatsApp Updates</h3>
-            <p>Instant Sattaking results, Jantri tips, aur expert tricks WhatsApp pe paiye.</p>
+            <h3>WhatsApp सपोर्ट</h3>
+            <p>Quick help, account setup, aur business solutions WhatsApp पे पाइए.</p>
             <a
               href="https://wa.me/9057279546"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
             >
-              WhatsApp Group Join Kariye
+              WhatsApp पे संदेश करें
             </a>
           </div>
 
@@ -51,8 +51,8 @@ const Contact = () => {
             <div className="contact-icon-wrapper">
               <FaEnvelope className="contact-icon" />
             </div>
-            <h3>Email Support</h3>
-            <p>Jantri formulas, MS Sheet calculations, ya subscription plans ke baare mein detail mein jaaniye.</p>
+            <h3>ईमेल सपोर्ट</h3>
+            <p>Jantri formulas, TZ Sheet calculations, या subscription plans के बारे में detail में जानिये.</p>
             <a href="mailto:support@jantrimssheet.com" className="contact-link">
               support@jantrimssheet.com
             </a>

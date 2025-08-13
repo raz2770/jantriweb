@@ -1,6 +1,5 @@
 import React from "react";
 import "./HeroSection.css";
-import MobilePhone from "./MobilePhone";
 
 const HeroSection = () => {
   const scrollToSection = (id) => {
@@ -15,16 +14,19 @@ const HeroSection = () => {
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-badge">
-            🎯 Trusted by 100K+ Users
+            <span className="badge-icon">📊</span>
+            <span>Trusted by 1000+ Clients</span>
           </div>
           
           <h1 className="hero-title">
-            Jantri MS Sheet - <span className="highlight">Satta King & Matka</span> का बाप
+            Jantri TZ Sheet
+            <br />
+            <span className="highlight">Client Account & Hisab Management</span>
           </h1>
           
           <p className="hero-description">
-            Sabse fast Sattaking results, live Matka charts, Kalyan ki सही jodi aur 
-            complete Jantri analysis. Apka trusted companion for professional matka calculations aur predictions.
+            Professional client account management, Jantri calculations aur accurate hisab-kitab. 
+            Apke clients ka complete financial record aur profit-loss tracking ek jagah.
           </p>
           
           <div className="hero-actions">
@@ -32,37 +34,41 @@ const HeroSection = () => {
               className="hero-primary-btn"
               onClick={() => scrollToSection("download")}
             >
-              Download Now
+              <span className="btn-icon">📱</span>
+              Download करें
             </button>
             <button 
               className="hero-secondary-btn"
-              onClick={() => scrollToSection("features")}
+              onClick={() => scrollToSection("screenshots")}
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-              Explore Features
+              <span className="btn-icon">👀</span>
+              Screenshots देखें
+            </button>
+            <button 
+              className="hero-secondary-btn"
+              onClick={() => scrollToSection("contact")}
+            >
+              <span className="btn-icon">📞</span>
+              संपर्क करें
             </button>
           </div>
           
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">10K+</span>
-              <span className="stat-label">Active Users</span>
+              <div className="stat-number">1000+</div>
+              <div className="stat-label">Clients Managed</div>
             </div>
+            <div className="stat-divider"></div>
             <div className="stat-item">
-              <span className="stat-number">99.9%</span>
-              <span className="stat-label">Uptime</span>
+              <div className="stat-number">99.9%</div>
+              <div className="stat-label">Accuracy</div>
             </div>
+            <div className="stat-divider"></div>
             <div className="stat-item">
-              <span className="stat-number">4.8★</span>
-              <span className="stat-label">App Rating</span>
+              <div className="stat-number">5.0★</div>
+              <div className="stat-label">User Rating</div>
             </div>
           </div>
-        </div>
-        
-        <div className="hero-visual">
-          <MobilePhone />
         </div>
       </div>
     </section>

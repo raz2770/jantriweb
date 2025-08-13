@@ -1,4 +1,4 @@
-# Jantri MS Sheet - Sattaking Matka App
+# Jantri TZ Sheet - Sattaking Matka App
 # https://www.robotstxt.org/robotstxt.html
 
 User-agent: *

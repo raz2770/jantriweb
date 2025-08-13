@@ -20,8 +20,8 @@ const FeaturesSection = () => {
     },
     { 
       icon: feature3, 
-      title: "MS Sheet Calculator Pro", 
-      description: "Professional MS Sheet calculations with automated formulas, profit/loss tracking, aur detailed reports. पैसा double karne ka आसान tarika.",
+      title: "TZ Sheet Calculator Pro", 
+      description: "Professional TZ Sheet calculations with automated formulas, profit/loss tracking, aur detailed reports. पैसा double karne ka आसान tarika.",
       link: "#"
     },
   ];
