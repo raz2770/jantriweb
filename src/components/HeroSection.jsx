@@ -39,7 +39,7 @@ const HeroSection = () => {
             </button>
             <a
               className="hero-primary-btn"
-              href="https://github.com/raz2770/jantriweb/releases/download/v1.0.1/jantri.apk"
+              href="https://drive.google.com/uc?export=download&id=1g8DNbKEIkME_oNqphGH7zZo0f_nhH8F8"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Jantri APK for Android"
