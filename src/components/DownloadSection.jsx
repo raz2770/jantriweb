@@ -50,8 +50,9 @@ const DownloadSection = () => {
           </button>
             <a
               className="download-button"
-              href="/jantri.apk"
-              download
+              href="https://github.com/raz2770/jantriweb/releases/download/v1.0.1/jantri.apk"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Download Jantri APK for Android"
               style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}
             >
