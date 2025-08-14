@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,7 +45,8 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => scrollToSection("hero")} role="button" tabIndex="0">
-          Jantri TZ Sheet
+          <img src={logo} alt="Jantri TZ Sheet" className="logo-image" />
+          <span className="logo-text">Jantri TZ Sheet</span>
         </div>
         
         <ul className="navbar-links" role="menubar">

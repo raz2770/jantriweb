@@ -48,6 +48,16 @@ const DownloadSection = () => {
             <img src={appStore} alt="Download from Apple App Store" />
             <span>App Store</span>
           </button>
+            <a
+              className="download-button"
+              href="/jantri.apk"
+              download
+              aria-label="Download Jantri APK for Android"
+              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}
+            >
+              <span role="img" aria-label="Android">🤖</span>
+              <span>Android APK</span>
+            </a>
         </div>
         
         <div className="download-feature-list">

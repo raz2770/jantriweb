@@ -4,7 +4,7 @@ import './WhatsAppButton.css';
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     // Replace with your WhatsApp number
-    const phoneNumber = '919057279546';
+    const phoneNumber = '916376431266';
     const message = 'नमस्ते! मुझे Jantri TZ Sheet app के बारे में जानकारी चाहिए।';
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');

@@ -26,8 +26,8 @@ const Contact = () => {
             </div>
             <h3>फ़ोन सपोर्ट</h3>
             <p>Client management, Jantri calculations, aur technical help के लिए direct call करिये.</p>
-            <a href="tel:+919057279546" className="contact-link">
-              +91 90572 79546
+            <a href="tel:+916376431266" className="contact-link">
+              +91 63764 31266
             </a>
           </div>
 
@@ -38,7 +38,7 @@ const Contact = () => {
             <h3>WhatsApp सपोर्ट</h3>
             <p>Quick help, account setup, aur business solutions WhatsApp पे पाइए.</p>
             <a
-              href="https://wa.me/9057279546"
+              href="https://wa.me/916376431266"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"

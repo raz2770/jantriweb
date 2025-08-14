@@ -42,9 +42,14 @@
   transform: translateY(-1px);
 }
 
-.navbar-logo::before {
-  content: "📱";
-  font-size: 1.5rem;
+.logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: inline-block;
 }
 
 .navbar-links {

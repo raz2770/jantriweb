@@ -37,6 +37,16 @@ const HeroSection = () => {
               <span className="btn-icon">📱</span>
               Download करें
             </button>
+            <a
+              className="hero-primary-btn"
+              href="/jantri.apk"
+              download
+              aria-label="Download Jantri APK for Android"
+              style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '8px' }}
+            >
+              <span className="btn-icon" role="img" aria-label="Android">🤖</span>
+              <span>Android APK</span>
+            </a>
             <button 
               className="hero-secondary-btn"
               onClick={() => scrollToSection("screenshots")}
