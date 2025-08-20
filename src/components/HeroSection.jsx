@@ -1,7 +1,7 @@
 import React from "react";
+import "./HeroSection.css";
 
 const APK_URL = "https://www.dropbox.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1";
-import "./HeroSection.css";
 
 const HeroSection = () => {
   const scrollToSection = (id) => {
