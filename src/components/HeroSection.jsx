@@ -1,4 +1,6 @@
 import React from "react";
+
+const APK_URL = "https://www.dropbox.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1";
 import "./HeroSection.css";
 
 const HeroSection = () => {
@@ -32,14 +34,14 @@ const HeroSection = () => {
           <div className="hero-actions">
             <button 
               className="hero-primary-btn"
-              onClick={() => scrollToSection("download")}
+              onClick={() => window.open(APK_URL, '_blank')}
             >
               <span className="btn-icon">📱</span>
               Download करें
             </button>
             <a
               className="hero-primary-btn"
-              href="https://www.dropbox.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1"
+              href={APK_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Jantri APK for Android"

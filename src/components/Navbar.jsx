@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/logo.png";
 
+const APK_URL = "https://www.dropbox.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -57,8 +59,8 @@ const Navbar = () => {
           <li onClick={() => scrollToSection("contact")} role="menuitem">संपर्क</li>
           <button 
             className="navbar-cta" 
-            onClick={() => scrollToSection("download")}
-            aria-label="Download Jantri TZ Sheet App"
+            onClick={() => window.open(APK_URL, '_blank')}
+            aria-label="Download Jantri TZ Sheet APK"
           >
             शुरू करें
           </button>
@@ -84,7 +86,7 @@ const Navbar = () => {
           </ul>
           <button 
             className="navbar-cta" 
-            onClick={() => scrollToSection("download")}
+            onClick={() => window.open(APK_URL, '_blank')}
           >
             शुरू करें
           </button>

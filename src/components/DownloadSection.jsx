@@ -4,15 +4,12 @@ import googlePlay from "../assets/google-play-icon.png";
 import appStore from "../assets/app-store-icon.png";
 import { trackDownload } from "../utils/analytics";
 
+const APK_URL = "https://www.dropbox.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1";
+
 const DownloadSection = () => {
   const handleDownload = (platform) => {
     trackDownload(platform);
-    // Replace with actual app store links
-    const links = {
-      'google-play': 'https://play.google.com/store/apps/details?id=com.jantri.mssheet',
-      'app-store': 'https://apps.apple.com/app/jantri-ms-sheet/id123456789'
-    };
-    window.open(links[platform] || '#', '_blank');
+    window.open(APK_URL, '_blank');
   };
 
   return (
@@ -50,7 +47,7 @@ const DownloadSection = () => {
           </button>
             <a
               className="download-button"
-              href="https://www.dropbox.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1"
+              href={APK_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Jantri APK for Android"
