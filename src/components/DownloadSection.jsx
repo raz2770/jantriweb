@@ -4,7 +4,7 @@ import googlePlay from "../assets/google-play-icon.png";
 import appStore from "../assets/app-store-icon.png";
 import { trackDownload } from "../utils/analytics";
 
-const APK_URL = "https://www.dropbox.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1";
+const APK_URL = "https://dl.dropboxusercontent.com/scl/fi/lpid4kkg91njnkwzehrgu/jantri.apk?rlkey=amo53fjkfsc0w2nhurvc9bqks&st=iju7rujo&dl=1";
 
 const DownloadSection = () => {
   const handleDownload = (platform) => {
@@ -51,6 +51,7 @@ const DownloadSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Jantri APK for Android"
+              download="jantri.apk"
               style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}
             >
               <span role="img" aria-label="Android">🤖</span>
