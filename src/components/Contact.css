@@ -25,6 +25,7 @@
   padding: 0 var(--space-6);
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .contact-header {

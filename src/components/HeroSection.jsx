@@ -46,7 +46,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               aria-label="Download Jantri APK for Android"
               download="jantri.apk"
-              style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '8px' }}
+              style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
             >
               <span className="btn-icon" role="img" aria-label="Android">🤖</span>
               <span>Android APK</span>

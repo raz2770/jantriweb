@@ -66,6 +66,7 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden; /* Prevent horizontal overflow from slides */
 }
 
 .screenshot-slide {
@@ -74,6 +75,7 @@
   align-items: center;
   transition: all var(--transition-normal);
   padding: var(--space-4);
+  max-width: 100%;
 }
 
 .screenshot-slide img {

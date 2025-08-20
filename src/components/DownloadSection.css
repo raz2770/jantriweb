@@ -26,6 +26,7 @@
   text-align: center;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .download-badge {
@@ -81,10 +82,11 @@
   font-weight: 600;
   transition: all var(--transition-normal);
   box-shadow: var(--shadow-lg);
-  min-width: 180px;
+  min-width: 0;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .download-button::before {
@@ -125,6 +127,8 @@
   margin-top: var(--space-8);
   padding-top: var(--space-8);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .stat-item {
@@ -154,6 +158,7 @@
   gap: var(--space-8);
   margin-top: var(--space-8);
   flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .download-feature {
@@ -209,7 +214,7 @@
   
   .download-button {
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
   }
   
   .download-stats {

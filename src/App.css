@@ -12,7 +12,8 @@
 /* Section spacing */
 section {
   position: relative;
-  overflow: hidden;
+  overflow-x: clip; /* prevent horizontal scroll while allowing vertical overflow */
+  overflow-y: visible;
 }
 
 section:not(:last-child) {

@@ -27,6 +27,8 @@
   padding: 0 var(--space-6);
   position: relative;
   z-index: 1;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .hero-content {
@@ -94,6 +96,7 @@
   gap: var(--space-4);
   justify-content: center;
   margin-bottom: var(--space-12);
+  max-width: 100%;
 }
 
 .hero-primary-btn {

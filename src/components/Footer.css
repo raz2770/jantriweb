@@ -19,6 +19,7 @@
   max-width: var(--container-xl);
   margin: 0 auto;
   padding: 0 var(--space-6);
+  overflow-x: hidden;
 }
 
 .footer-content {
