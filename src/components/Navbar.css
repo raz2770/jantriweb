@@ -22,12 +22,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-2) var(--space-4);
 }
 
 .navbar-logo {
-  font-size: 1.75rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--primary-color);
   cursor: pointer;
   text-decoration: none;
@@ -43,7 +43,7 @@
 }
 
 .logo-image {
-  height: 40px;
+  height: 28px;
   width: auto;
   object-fit: contain;
 }
@@ -57,19 +57,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: var(--space-8);
+  gap: var(--space-4);
   align-items: center;
 }
 
 .navbar-links li {
   position: relative;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--gray-700);
   transition: all var(--transition-normal);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-lg);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
 }
 
 .navbar-links li:hover {
@@ -97,13 +97,13 @@
 .navbar-cta {
   background: var(--primary-color);
   color: var(--white);
-  padding: var(--space-2) var(--space-5);
-  border-radius: var(--radius-lg);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-md);
   font-weight: 600;
   transition: all var(--transition-normal);
   border: none;
   cursor: pointer;
-  margin-left: var(--space-4);
+  margin-left: var(--space-3);
 }
 
 .navbar-cta:hover {
@@ -210,21 +210,21 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .navbar-container {
-    padding: var(--space-3) var(--space-5);
+    padding: var(--space-2) var(--space-4);
   }
   
   .navbar-links {
-    gap: var(--space-6);
+    gap: var(--space-3);
   }
 }
 
 @media (max-width: 768px) {
   .navbar-container {
-    padding: var(--space-3) var(--space-4);
+    padding: var(--space-2) var(--space-3);
   }
   
   .navbar-logo {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   
   .navbar-links {
@@ -242,25 +242,25 @@
 
 @media (max-width: 480px) {
   .navbar-container {
-    padding: var(--space-3);
+    padding: var(--space-2);
   }
   
   .navbar-logo {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   
   .mobile-menu {
-    padding: var(--space-4);
+    padding: var(--space-3);
   }
 }
 
 /* Body padding for fixed navbar */
 body {
-  padding-top: 80px;
+  padding-top: 56px;
 }
 
 @media (max-width: 768px) {
   body {
-    padding-top: 70px;
+  padding-top: 52px;
   }
 }
