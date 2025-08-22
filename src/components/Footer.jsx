@@ -109,10 +109,10 @@ const Footer = () => {
             &copy; {currentYear} TZ Sheet. All rights reserved.
           </p>
           <div className="footer-legal">
-            <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-            <a href="/terms.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
-            <a href="/refunds.html" target="_blank" rel="noopener noreferrer">Cancellations & Refunds</a>
-            <a href="/shipping.html" target="_blank" rel="noopener noreferrer">Shipping Policy</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms & Conditions</a>
+            <a href="/refunds">Cancellations & Refunds</a>
+            <a href="/shipping">Shipping Policy</a>
           </div>
         </div>
       </div>
