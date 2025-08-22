@@ -53,8 +53,8 @@ const Contact = () => {
             </div>
             <h3>ईमेल सपोर्ट</h3>
             <p>Jantri formulas, TZ Sheet calculations, या subscription plans के बारे में detail में जानिये.</p>
-            <a href="mailto:support@jantrimssheet.com" className="contact-link">
-              support@jantrimssheet.com
+            <a href="mailto:jantri@gmail.com" className="contact-link">
+              jantri@gmail.com
             </a>
           </div>
         </div>
